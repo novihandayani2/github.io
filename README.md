@@ -10,7 +10,7 @@
 
 ## 🌐 Live Website
 
-**https://novihandayani.github.io**
+**https://novihandayani2.github.io/github.io/**
 
 ---
 
