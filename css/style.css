@@ -1,0 +1,419 @@
+/* Custom Styles for Novi Handayani Portfolio */
+/* Color Palette: Maroon + Gold + Cream + Charcoal + Sage */
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #faf9f6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7f1d1d;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #991b1b;
+}
+
+/* Custom Scrollbar for Certification List */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f5f3ee;
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d4d0c5;
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #b8b4a8;
+}
+
+/* Navigation States */
+#navbar.scrolled {
+    background-color: rgba(250, 249, 246, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 3px rgba(127, 29, 29, 0.1);
+}
+
+#navbar.scrolled .nav-text {
+    color: #2d2d2d;
+}
+
+/* Hero Animations */
+.hero-content {
+    animation: fadeUp 0.8s ease-out 0.3s forwards;
+}
+
+.hero-image-container {
+    animation: slideInRight 0.8s ease-out 0.5s forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scroll Reveal Animation */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Counter Animation */
+.counter {
+    display: inline-block;
+}
+
+/* Skill Bar Animation */
+.skill-bar {
+    transition: width 1.5s ease-out;
+}
+
+/* Card Hover Effects */
+.stat-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Portfolio Card Line Clamp */
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#mobile-menu.active {
+    max-height: 400px;
+}
+
+/* Button Hover Effects */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+/* Form Focus States */
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(127, 29, 29, 0.1);
+}
+
+/* Image Loading State */
+.hero-image {
+    background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 100%);
+}
+
+/* Print Styles */
+@media print {
+    nav, .scroll-indicator, footer {
+        display: none !important;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Focus Visible for Accessibility */
+:focus-visible {
+    outline: 2px solid #7f1d1d;
+    outline-offset: 2px;
+}
+
+/* Selection Color */
+::selection {
+    background-color: rgba(127, 29, 29, 0.2);
+    color: #7f1d1d;
+}
+
+/* Loading Animation for Stats */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.loading-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, #7f1d1d 0%, #c9a227 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Glass Morphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(127, 29, 29, 0.1);
+}
+
+/* Shadow Utilities */
+.shadow-soft {
+    box-shadow: 0 20px 25px -5px rgba(127, 29, 29, 0.1), 0 10px 10px -5px rgba(127, 29, 29, 0.04);
+}
+
+.shadow-glow {
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
+}
+
+/* Border Gradient */
+.border-gradient {
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, #7f1d1d, #c9a227) border-box;
+}
+
+/* Hover Lift Effect */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(127, 29, 29, 0.1);
+}
+
+/* Icon Animation */
+.icon-bounce {
+    animation: iconBounce 2s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Link Underline Animation */
+.link-underline {
+    position: relative;
+}
+
+.link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+    width: 100%;
+}
+
+/* Badge Styles */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-primary {
+    background-color: rgba(127, 29, 29, 0.1);
+    color: #7f1d1d;
+}
+
+.badge-success {
+    background-color: rgba(34, 197, 94, 0.1);
+    color: #16a34a;
+}
+
+.badge-warning {
+    background-color: rgba(201, 162, 39, 0.1);
+    color: #b08d1f;
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Container Padding for Mobile */
+@media (max-width: 640px) {
+    .max-w-7xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+    .min-h-screen {
+        min-height: -webkit-fill-available;
+    }
+}
+
+/* Radial Gradient Background */
+.bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 70%);
+}
+
+/* Custom Animation for Hero Badge */
+@keyframes pulse-dot {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+}
+
+.animate-pulse-dot {
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Smooth shadow transition for cards */
+.card-shadow {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-shadow:hover {
+    box-shadow: 0 25px 50px -12px rgba(127, 29, 29, 0.15);
+}
+
+/* Timeline connector line */
+.timeline-connector {
+    position: relative;
+}
+
+.timeline-connector::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #7f1d1d, #c9a227);
+    transform: translateX(-50%);
+}
+
+/* Decorative corner accent */
+.corner-accent {
+    position: relative;
+}
+
+.corner-accent::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    border-top: 3px solid #c9a227;
+    border-right: 3px solid #c9a227;
+    border-top-right-radius: 12px;
+}
+
+/* Text balance for headings */
+h1, h2, h3 {
+    text-wrap: balance;
+}
+
+/* Smooth image loading */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img[loading] {
+    opacity: 0;
+}
+
+img.loaded {
+    opacity: 1;
+}
