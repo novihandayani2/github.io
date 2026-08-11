@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f2e8" />
+  <meta name="description" content="Novi Handayani — Administration, Data Management, Reporting, Customer Support." />
+  <title>Novi Handayani — Administration Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=6.0" />
+  <link rel="stylesheet" href="assets/css/mobile.css?v=6.0" />
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-brand"><span>NH.</span><small>PROFESSIONAL PORTFOLIO</small></div>
+      <div class="loader-center">
+        <p>INTRODUCING</p>
+        <h2>NOVI HANDAYANI</h2>
+        <div class="loader-rule"><i id="loaderBar"></i></div>
+      </div>
+      <div class="loader-bottom"><span>CIANJUR · INDONESIA</span><strong id="loaderCount">00</strong></div>
+    </div>
+  </div>
+
+  <div class="page-progress"><span id="pageProgress"></span></div>
+
+  <header class="site-header" id="top">
+    <a class="brand magnetic" href="#top">NH<span>.</span></a>
+    <nav class="nav">
+      <a href="#story" data-i18n="navStory">Cerita</a>
+      <a href="#career" data-i18n="navCareer">Karier</a>
+      <a href="#campus" data-i18n="navCampus">Kuliah</a>
+      <a href="#work" data-i18n="navWork">Karya</a>
+      <a href="#contact" data-i18n="navContact">Kontak</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle magnetic" id="langToggle" type="button" aria-label="Switch language"><span class="active">ID</span><i></i><span>EN</span></button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#story" data-i18n="navStory">Cerita</a>
+    <a href="#career" data-i18n="navCareer">Karier</a>
+    <a href="#campus" data-i18n="navCampus">Kuliah</a>
+    <a href="#work" data-i18n="navWork">Karya</a>
+    <a href="#contact" data-i18n="navContact">Kontak</a>
+  </div>
+
+  <main>
+    <section class="hero shell">
+      <div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div>
+      <div class="hero-meta reveal"><span data-i18n="heroRole">ADMINISTRATION · DATA · REPORTING</span><span>CIANJUR, INDONESIA</span></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal" data-i18n="hello">Halo, saya</p>
+          <h1 class="hero-name" aria-label="Novi Handayani"><span class="split-word hero-first">NOVI</span><span class="split-word hero-last">HANDAYANI</span></h1>
+          <div class="hero-bottom reveal">
+            <p data-i18n="heroText">Saya membantu pekerjaan tetap rapi—data jelas, informasi sampai, dan tindak lanjut berjalan.</p>
+            <a class="circle-arrow magnetic" href="#story">↓</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" id="heroVisual">
+          <div class="photo-card">
+            <picture>
+              <source srcset="assets/img/profile.webp" type="image/webp">
+              <img src="assets/img/profile-placeholder.svg" alt="Foto profil Novi Handayani" />
+            </picture>
+            <span class="photo-label">NOVI / 2026</span>
+          </div>
+          <div class="floating-chip chip-1">ADMINISTRATION</div>
+          <div class="floating-chip chip-2">DATA & REPORTING</div>
+        </div>
+      </div>
+      <div class="capability-strip reveal" aria-label="Core capabilities">
+        <div class="capability-item"><small>01</small><span data-i18n="cap1">Administration</span></div>
+        <div class="capability-item"><small>02</small><span data-i18n="cap2">Reporting</span></div>
+        <div class="capability-item"><small>03</small><span data-i18n="cap3">Data Management</span></div>
+        <div class="capability-item"><small>04</small><span data-i18n="cap4">Customer Support</span></div>
+      </div>
+    </section>
+
+    <section class="story shell" id="story">
+      <div class="section-head reveal"><span>01</span><span data-i18n="storyLabel">CARA SAYA BEKERJA</span></div>
+      <div class="story-grid">
+        <h2 class="story-line reveal" data-i18n="storyLine">Rapi dulu.<br><em>Baru bergerak cepat.</em></h2>
+        <div class="story-copy reveal">
+          <p data-i18n="storyText">Saya suka membuat informasi lebih mudah dibaca, pekerjaan lebih teratur, dan komunikasi lebih jelas.</p>
+          <span class="mini-note" data-i18n="storyNote">ADMINISTRATION / OPERATIONS / CUSTOMER SUPPORT</span>
+        </div>
+      </div>
+      <div class="proof-grid">
+        <article class="proof-card blue reveal"><small>BCA</small><strong class="counter" data-target="80">0</strong><span data-i18n="proof1">hingga transaksi / hari</span></article>
+        <article class="proof-card coral reveal"><small>ACCURACY</small><strong>ZERO</strong><span data-i18n="proof2">discrepancy selama penugasan</span></article>
+        <article class="proof-card yellow reveal"><small>POS INDONESIA</small><strong class="counter" data-target="100">0</strong><span data-i18n="proof3">+ item administrasi / hari</span></article>
+        <article class="proof-card mint reveal"><small>MANAGEMENT</small><strong>3.68</strong><span data-i18n="proof4">GPA / 4.00</span></article>
+      </div>
+    </section>
+
+    <section class="career" id="career">
+      <div class="shell">
+        <div class="section-head light reveal"><span>02</span><span data-i18n="careerLabel">PROFESSIONAL JOURNEY</span></div>
+        <div class="career-title-row reveal"><h2 data-i18n="careerTitle">Belajar presisi.<br><em>Lalu menjaga alur.</em></h2><p data-i18n="careerIntro">Setiap peran menambah satu lapisan: data, akurasi, customer, reporting, dan dukungan operasional.</p></div>
+        <div class="timeline">
+          <div class="timeline-line"><span id="timelineFill"></span></div>
+          <article class="career-card reveal">
+            <div class="career-year">2026 — NOW</div><div class="career-index">01</div>
+            <div class="career-main"><span>GENERAL ADMIN</span><h3>PT Kurnia Perkasa Propertindo</h3><p data-i18n="job1">Menangani call customer, membantu alur sales, membuat video pemasaran, serta reporting harian, mingguan, dan bulanan.</p><div class="tag-row"><b>Customer</b><b>Sales Support</b><b>Reporting</b><b>Content</b></div></div>
+          </article>
+          <article class="career-card reveal">
+            <div class="career-year">2025 — 2026</div><div class="career-index">02</div>
+            <div class="career-main"><span>TELLER</span><h3>Bank Central Asia (BCA)</h3><p data-i18n="job2">Memproses 50–80 transaksi harian, balancing kas, menjaga zero discrepancy, membuat laporan kas, dan menjalankan prosedur kepatuhan.</p><div class="tag-row"><b>Accuracy</b><b>Cash Balancing</b><b>Excel</b><b>Compliance</b></div></div>
+          </article>
+          <article class="career-card reveal">
+            <div class="career-year">2024</div><div class="career-index">03</div>
+            <div class="career-main"><span>MARKETING SUPPORT INTERN</span><h3>PT Pos Indonesia</h3><p data-i18n="job3">Mengelola input data manifes, administrasi 100+ barang per hari, dan verifikasi dokumen logistik.</p><div class="tag-row"><b>Data Entry</b><b>Verification</b><b>Documentation</b></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="campus shell" id="campus">
+      <div class="section-head reveal"><span>03</span><span data-i18n="campusLabel">ACADEMIC JOURNEY</span></div>
+      <div class="campus-intro reveal"><span>2021 → 2025</span><h2 data-i18n="campusTitle">Kuliah membentuk<br><em>cara saya berpikir.</em></h2></div>
+      <div class="campus-cards">
+        <article class="campus-card foundation reveal">
+          <div class="card-no">01 / FOUNDATION</div><div class="card-graphic rings"></div>
+          <h3 data-i18n="foundationTitle">Memahami bagaimana bisnis bekerja.</h3>
+          <p data-i18n="foundationText">S1 Manajemen memberi fondasi pada administrasi bisnis, operasional, keuangan, pemasaran digital, dan perilaku konsumen.</p>
+          <div class="big-stat"><strong>3.68</strong><small>GPA / 4.00</small></div>
+        </article>
+        <article class="campus-card research reveal">
+          <div class="card-no">02 / RESEARCH</div><div class="card-graphic dots"></div>
+          <h3 data-i18n="researchTitle">Membaca alasan di balik keputusan konsumen.</h3>
+          <p class="thesis" data-i18n="thesis">“Pengaruh Viral Marketing dan Reputasi Merek terhadap Keputusan Pembelian Produk Somethinc.”</p>
+          <div class="flow"><span>Viral Marketing</span><i>→</i><span>Brand Reputation</span><i>→</i><span>Purchase Decision</span></div>
+        </article>
+        <article class="campus-card practice reveal">
+          <div class="card-no">03 / PRACTICE</div><div class="card-graphic bars"></div>
+          <h3 data-i18n="practiceTitle">Mengubah rencana menjadi eksekusi.</h3>
+          <p data-i18n="practiceText">Di CGUD, mengelola administrasi dan jadwal roadshow ke 20 sekolah serta mendukung program yang mencapai 1.000+ siswa.</p>
+          <div class="double-stat"><div><strong>20</strong><small>SCHOOLS</small></div><div><strong>1K+</strong><small>STUDENTS</small></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="shell">
+        <div class="section-head reveal"><span>04</span><span data-i18n="workLabel">SELECTED PROJECTS</span></div>
+        <div class="work-intro reveal">
+          <h2 data-i18n="workTitle">Dua proyek.<br><em>Satu cara berpikir: terstruktur.</em></h2>
+          <p data-i18n="workIntro">Proyek independen berbasis Microsoft Excel yang menunjukkan cara saya menyusun data, kontrol, dan pelaporan keuangan secara sistematis.</p>
+        </div>
+        <div class="project-list">
+          <a class="project-row reveal" href="https://docs.google.com/spreadsheets/d/13lA184b9PlvE48N7_DxcAswcdI7BxH1a/edit?usp=drive_link&ouid=104476290228397852337&rtpof=true&sd=true" target="_blank" rel="noopener">
+            <div class="project-number">01</div>
+            <div class="project-visual cash-visual" aria-hidden="true"><div class="sheet-grid"></div><div class="sheet-chart"><span></span><span></span><span></span><span></span></div></div>
+            <div class="project-copy">
+              <small>MICROSOFT EXCEL · FINANCIAL OPERATIONS</small>
+              <h3 data-i18n="project1Title">Teller Cash Management Simulation</h3>
+              <p data-i18n="project1Text">Simulasi workbook untuk pencatatan kas, monitoring transaksi, dan rekonsiliasi dengan struktur multi-sheet dan formula terintegrasi.</p>
+              <div class="project-tags"><span>INDEX-MATCH</span><span>SUMIFS</span><span>COUNTIFS</span><span>DATA VALIDATION</span></div>
+            </div>
+            <span class="project-arrow">↗</span>
+          </a>
+          <a class="project-row reveal" href="https://docs.google.com/spreadsheets/d/1rcJqDKMY93LuO2i2RlchTkvqf1Zn5XbS/edit?usp=drive_link&ouid=104476290228397852337&rtpof=true&sd=true" target="_blank" rel="noopener">
+            <div class="project-number">02</div>
+            <div class="project-visual finance-visual" aria-hidden="true"><div class="ledger-lines"></div><div class="donut"></div></div>
+            <div class="project-copy">
+              <small>MICROSOFT EXCEL · ACCOUNTING</small>
+              <h3 data-i18n="project2Title">Integrated Financial Management Workbook</h3>
+              <p data-i18n="project2Text">Workbook terintegrasi untuk mengorganisasi chart of accounts, master data, trial balance, laporan keuangan, dan ringkasan manajemen.</p>
+              <div class="project-tags"><span>ACCOUNTING</span><span>FINANCIAL REPORTING</span><span>DASHBOARD</span><span>DATA STRUCTURE</span></div>
+            </div>
+            <span class="project-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="skill-ticker"><div>MICROSOFT EXCEL ✦ DATA MANAGEMENT ✦ REPORTING ✦ ADMINISTRATION ✦ CUSTOMER SUPPORT ✦ GOOGLE WORKSPACE ✦ DOCUMENTATION ✦ </div></div>
+      <div class="shell skills-grid">
+        <h2 class="reveal" data-i18n="skillsTitle">Terstruktur saat bekerja.<br><em>Fleksibel saat situasi berubah.</em></h2>
+        <div class="skills-list reveal"><span>MICROSOFT EXCEL</span><span>DATA MANAGEMENT</span><span>REPORTING</span><span>DOCUMENT FILING</span><span>CUSTOMER HANDLING</span><span>GOOGLE WORKSPACE</span><span>BASIC ACCOUNTING</span><span>ADAPTABILITY</span></div>
+      </div>
+    </section>
+
+    <section class="contact shell" id="contact">
+      <div class="section-head reveal"><span>05</span><span data-i18n="contactLabel">LET'S CONNECT</span></div>
+      <div class="contact-grid">
+        <h2 class="reveal" data-i18n="contactTitle">Siap mendukung pekerjaan<br><em>yang lebih terstruktur.</em></h2>
+        <p class="reveal" data-i18n="contactText">Terbuka untuk peluang Administration Staff dan peran operasional. Untuk diskusi rekrutmen atau kolaborasi profesional, silakan hubungi saya melalui kanal berikut.</p>
+      </div>
+      <div class="socials reveal">
+        <a class="social magnetic" href="mailto:novihandayanii16@gmail.com"><span class="social-icon"><img src="assets/icons/mail.svg" alt=""></span><div><small>EMAIL</small><strong>novihandayanii16@gmail.com</strong></div><span class="social-arrow">↗</span></a>
+        <a class="social magnetic" href="https://wa.me/6285861922672" target="_blank" rel="noopener"><span class="social-icon"><img src="assets/icons/whatsapp.svg" alt=""></span><div><small>WHATSAPP</small><strong>+62 858-6192-2672</strong></div><span class="social-arrow">↗</span></a>
+        <a class="social magnetic" href="https://linkedin.com/in/novi-handayani-a5aab6292" target="_blank" rel="noopener"><span class="social-icon"><img src="assets/icons/linkedin.svg" alt=""></span><div><small>LINKEDIN</small><strong>Novi Handayani</strong></div><span class="social-arrow">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 NOVI HANDAYANI</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <script src="assets/js/main.js?v=6.0"></script>
+</body>
+</html>
